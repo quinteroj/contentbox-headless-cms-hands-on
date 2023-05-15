@@ -25,8 +25,8 @@
 	"customizations": {
         "codespaces": {
             "openFiles": [
-                "OUTLINE.md",
-                "PREREQUISITES.md"
+                "Outline.md",
+                "Step-00-Prerequisites.md"
             ]
         },
         "vscode": {
