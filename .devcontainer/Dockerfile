@@ -16,7 +16,7 @@ LABEL maintainer "Ortus Solutions <info@ortussolutions.com>"
 LABEL repository "https://github.com/Ortus-Solutions/docker-commandbox"
 
 # Utility Packages for our buidling goodness
-ENV PACKAGES "git mysql-server"
+ENV PACKAGES "ca-certificates openssl openssh-client git mysql-server"
 
 # Install Common Dependency Binaries
 RUN echo "mysql-community-server mysql-community-server/root-pass password headlesscb" | debconf-set-selections \
@@ -27,7 +27,7 @@ RUN echo "mysql-community-server mysql-community-server/root-pass password headl
     && apt-get update && apt-get install --no-install-recommends -y ${PACKAGES} \
     # Create the SoapBox Database
     && service mysql start \
-    && mysql -uroot -headlesscb -e 'CREATE DATABASE headlesscb;' \
+    && mysql -uroot -pheadlesscb -e 'CREATE DATABASE headlesscb;' \
     && service mysql restart \
     # Cleanup
     && rm -rf /var/lib/{apt,dpkg,cache,log}/ \
