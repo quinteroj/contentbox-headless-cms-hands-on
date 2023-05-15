@@ -15,9 +15,9 @@ Hardware and software:
 Step by Step instructions for Installing and Setting up Docker, CommandBox, Node, NPM, NVM, and the App Templates are provided in the `pre-requisites` directory.
 
 - [Pre-Req 01 - Setup](prerequisites/Prereq-01-Setup.md)
-- [Pre-Req 02 - Instalar Doocker y CommandBox](prerequisites/Prereq-02-Docker-and-CommandBox.md)
-- [Pre-Req 03 - Instalar ContentBox](prerequisites/Prereq-03-CotentBox.md)
-- [Pre-Req 04 - Instalar Node y NPM](prerequisites/Prereq-04-Node-and-NPM.md)
+- [Pre-Req 02 - Install Doocker and CommandBox](prerequisites/Prereq-02-Docker-and-CommandBox.md)
+- [Pre-Req 03 - Install ContentBox](prerequisites/Prereq-03-CotentBox.md)
+- [Pre-Req 04 - Install Node and NPM](prerequisites/Prereq-04-Node-and-NPM.md)
 
 ## Additional Required Tools
 
